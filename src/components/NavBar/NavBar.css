@@ -1,0 +1,37 @@
+@font-face {
+    font-family: RobotoBold;
+    src: url('/src/assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+  
+
+.navBar{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.menu{
+    display: flex;
+    margin-left: 5vw;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.menu span{
+   font-family: 'RobotoBold';
+   font-size: 0.8rem;
+   color: #FBFCF8;
+}
+
+.options{
+    display: flex;
+    margin-right: 5vw;
+    align-items: center;
+    gap: 40px;
+}

@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavBar from "./components/NavBar/NavBar";
+import SectionVideo from "./components/Section/SectionVideo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+      <SectionVideo title='98A185' description='El primer crónografo curvo del mundo' 
+      ctaTitle='Descubre Más' ctaLink='#' startVideo />
     </div>
   );
 }
