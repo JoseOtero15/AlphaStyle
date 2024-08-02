@@ -5,7 +5,8 @@ export default function Logo(props){
         textRendering: 'geometricPrecision',
         imageRendering: 'optimizeQuality',
         fillRule: 'evenodd',
-        clipRule: 'evenodd'
+        clipRule: 'evenodd',
+        cursor: 'pointer'
     };
 
     return(

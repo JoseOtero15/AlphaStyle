@@ -24,6 +24,10 @@
   src: url('../../assets/fonts/NotoSerif/NotoSerif-SemiBoldItalic.ttf');
 }
 
+@font-face {
+  font-family: InriaSerif-BoldItalic;
+  src: url('../../assets/fonts/InriaSerif/InriaSerif-BoldItalic.ttf');
+}
 
 .section {
   position: relative;
@@ -69,7 +73,7 @@
 
 .title {
   font-size: 5rem;
-  font-family: 'NotoSerif-SemiBoldItalic', serif;
+  font-family:  'InriaSerif-BoldItalic','NotoSerif-SemiBoldItalic', serif;
   text-transform: uppercase;
 }
 

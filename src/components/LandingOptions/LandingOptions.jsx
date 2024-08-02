@@ -33,9 +33,8 @@ export default function LandingOptions() {
 
     return (
         <section className="sectionOptions" ref={sectionRef}>
-            <h1 className="section__title">Explora nuestros relojes</h1>
-            <div className="section__div">
-               
+            <h1 className="section__title">Explora nuestras marcas</h1>
+            <div className="section__div">              
                     <div className={`icon ${isVisible ? "animate" : ""}`} id="bulovaLogoSvg">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="8 51 176.9 83.9">
                             <g>
@@ -77,7 +76,7 @@ export default function LandingOptions() {
                         </svg>
                     </div>
             </div>
-                    <a id="cta" href={ x }>Mirar todas las marcas</a>
+                    <a id="ctaOptions" href={ x }>Ver todas las marcas</a>
         </section>
     );
 }
