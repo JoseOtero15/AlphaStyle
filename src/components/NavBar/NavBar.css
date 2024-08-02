@@ -20,7 +20,8 @@
     margin-left: 5vw;
     align-items: center;
     gap: 10px;
-
+    flex-basis: 0;
+    flex-grow: 1;
 }
 
 .menu span{
@@ -34,4 +35,7 @@
     margin-right: 5vw;
     align-items: center;
     gap: 40px;
+    flex-basis: 0;
+    flex-grow: 1;
+    justify-content: end;
 }

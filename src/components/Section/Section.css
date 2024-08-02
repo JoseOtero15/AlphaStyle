@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Roboto-Light;
+  src: url('../../assets/fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../../assets/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../../assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: NotoSerif-SemiBoldItalic;
+  src: url('../../assets/fonts/NotoSerif/NotoSerif-SemiBoldItalic.ttf');
+}
+
+
+.section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Roboto-Regular', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+  z-index: -1;
+}
+
+.content {
+  margin-left: 5vw;
+}
+
+.category{
+  font-size: 0.8rem;
+  margin-bottom: 10vh;
+  text-transform: uppercase;
+  font-family: 'Roboto-Medium', sans-serif;
+}
+
+
+.title {
+  font-size: 5rem;
+  font-family: 'NotoSerif-SemiBoldItalic', serif;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1rem;
+  font-family: 'Roboto-Light', serif;
+}
+
+.div__cta{
+  display: flex;
+  gap: 10vh;
+  margin-top: 12vh;
+}

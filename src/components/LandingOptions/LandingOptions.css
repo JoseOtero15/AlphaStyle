@@ -1,0 +1,133 @@
+@font-face {
+    font-family: NotoSerif-Italic;
+    src: url('../../assets/fonts/NotoSerif/NotoSerif-Italic.ttf');
+}
+
+:root{
+    color: #FBFCF8;
+}
+
+.sectionOptions{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.95vw;
+    width: 90%;
+    height: 100vh;
+}
+
+.section__title{
+    font-size: 1.5rem;
+    font-family:  NotoSerif-Italic, serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 15vh;
+}
+
+.section__div{
+    position: relative;
+    /* outline: 1px solid red; */
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icon{
+    position: relative;
+    width: 17%;
+    /* outline: 1px solid blue; */
+    cursor: pointer;
+    transition: opacity .4s ease-out;
+}
+
+.section__div:has( .icon:hover ) > :not( :hover ){
+    opacity: 0.4;
+}
+
+.icon svg{
+    /* outline: 1px solid red; */
+    position: absolute;
+    bottom: -8vh;
+    fill: transparent;
+    stroke: #FBFCF8;
+    stroke-width: .3px;
+    transition: transform 0.4s ease;
+}
+
+.icon svg:hover{
+    transform: scale(1.02);
+}
+
+.icon#bulovaLogoSvg path{
+    stroke-dasharray: 189;
+    stroke-dashoffset: 189;
+}
+
+.icon#bulovaLogoSvg svg:hover{
+    filter: drop-shadow(1px 0px 50px #9b9a9a);
+}
+
+.icon#casioLogoSvg path{
+    stroke-width: 1px;
+    stroke-dasharray: 871;
+    stroke-dashoffset: 871;
+}
+
+.icon#casioLogoSvg svg:hover{
+    filter: drop-shadow(1px 0px 50px rgb(45, 70, 145));
+}
+
+.icon#gshockLogoSvg path{
+    stroke-dasharray: 877;
+    stroke-dashoffset: 877;
+}
+
+.icon#gshockLogoSvg svg:hover{
+    filter: drop-shadow(1px 0px 50px rgb(83, 42, 42));
+}
+
+.icon#gshockLogoSvg{
+    bottom: -16vh;
+}
+
+.icon#edificeLogoSvg path{
+    stroke-dasharray: 202;
+    stroke-dashoffset: 202;
+}
+
+.icon#edificeLogoSvg svg:hover{
+    filter: drop-shadow(1px 0px 50px rgb(8, 8, 155));
+}
+
+.icon#edificeLogoSvg{
+    bottom: -1vh;
+}
+
+
+.icon.animate path{
+    animation: logoAnimation 1s linear forwards, fillLogoAnimation 1s linear 1s forwards;
+}
+
+@keyframes logoAnimation {
+    to{
+        stroke-dashoffset: 0; 
+    }
+}
+
+@keyframes fillLogoAnimation {
+    from{
+        fill: transparent;
+    }to{
+        fill: #FBFCF8;
+    }
+}
+
+#cta{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #FBFCF8;
+    text-align: center;
+}
